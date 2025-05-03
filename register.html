@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Registration</h1>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter your last name"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your number"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qualification">Highest Qualification</label>
+            <input
+              type="text"
+              id="qualification"
+              placeholder="Enter your qualification"
+            />
+          </div>
+          <div class="form-group">
+            <label for="qualification">Percentage secured</label>
+            <input
+              type="text"
+              id="qualification"
+              placeholder="Enter your percentage"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="interest">Interested Program</label>
+              <select id="interest">
+                <option value="secureU">SecureU Month</option>
+                <option value="cyberG">CyberGuard 90</option>
+                <option value="cyberB">CyberBrains 180</option>
+                <option value="cyberP">CyberPioneer 360</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="referral">How Did You Hear About Us?</label>
+            <select id="referral">
+              <option value="news">Newspaper</option>
+              <option value="social">Social Media</option>
+              <option value="google">Google</option>
+              <option value="fr">Friends & Relatives</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="interest">Your Intrest </label>
+            <select id="interest">
+              <option value="secureU">Getting ready for job</option>
+              <option value="cyberG">To acquire knowledge</option>
+              <option value="cyberB">Get secured from cybertheft</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

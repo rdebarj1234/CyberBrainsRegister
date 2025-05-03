@@ -1,0 +1,180 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.ts {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.course {
+  width: 30%;
+  margin: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(103, 69, 69, 0.1);
+}
+
+.course img,
+.course-image img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the area */
+  border-radius: 8px;
+}
+
+.course h3 {
+  margin: 10px 0;
+}
+
+.course ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course button {
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course button:hover {
+  background-color: #004b6b;
+}
+
+/* Full-Screen Ethical Hacking Section */
+.full-screen-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+button a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.course-image {
+  width: 38%;
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.course-content {
+  width: 55%;
+  padding-left: 20px;
+}
+
+.course-content h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.course-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-content p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.course-content button {
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-content button:hover {
+  background-color: #0077aa;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .course {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .full-screen-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-image,
+  .course-content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .course-content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .course h3 {
+    font-size: 1.4rem;
+  }
+
+  .course-content h3 {
+    font-size: 1.6rem;
+  }
+}
